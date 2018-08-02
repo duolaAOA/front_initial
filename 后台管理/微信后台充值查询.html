@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微信对账单</title>
+
+    <script src="../static/laydate/laydate.js"></script>
+    <script type="text/javascript" src="../static/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../static/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/custom.min.css">
+
+</head>
+
+
+<body style="background-color: transparent; color: black" >
+
+<div class="container">
+    <div class="jumbotron" style="background-color: #C6E2FF; ">
+        <h5>对账单只显示最近7天的记录，如果筛选了对账日期，只会显示当前对账日期的记录</h5>
+        <h5>注意:</h5>
+        <h5>1.如果充值记录和积分记录的总积分不一致，说明数据记录有误！</h5>
+        <h5>2.总金额应该是总积分的6倍！</h5>
+        <h5>3.微信会在早上10点更新昨天的对账单，请及时下载更新查看，保证总交易额和总金额一致</h5>
+    </div>
+
+    <form class="form-inline">
+        <div class="form-group" style="vertical-align: top">
+            <label for="exampleInputName2" style="font-size: 15px">对账日期：&nbsp;&nbsp;</label>
+            <input type="text" class="form-control" id="form_datetime" value="">
+            <span class="add-on"><i class="icon-bar"></i> </span>
+        </div>
+
+        <span>
+            <button type="submit" class="btn btn-default" value="sumbit" href="#">搜索</button>
+            <button type="submit" class="btn btn-default" value="wxsumbit" href="#">
+                <span class="glyphicon glyphicon glyphicon-save"><strong>下载微信对账单</strong></span>
+            </button>
+        </span>
+
+    </form>
+    <div>
+        <table class="table table-hover table-responsive">
+            <caption style="font-weight: bold; font-size: 20px;color: black">总览</caption>
+            <tr>
+                <th align="left">ID</th>
+                <th align="left">总金额</th>
+                <th align="left">总积分</th>
+                <th align="left">交易笔数</th>
+            </tr>
+            <tr>
+                <th>充值记录</th>
+                <th>363024</th>
+                <th>60504</th>
+                <th>159</th>
+            </tr>
+            <tr>
+                <th>积分记录</th>
+                <th>无</th>
+                <th>60504</th>
+                <th>159</th>
+            </tr>
+        </table>
+
+        <table class="table table-hover table-responsive">
+            <caption style="font-weight: bold; font-size: 20px; color: black;">近一周总览</caption>
+            <tr>
+                <th align="left">ID</th>
+                <th align="left">总金额</th>
+                <th align="left">总积分</th>
+                <th align="left">交易笔数</th>
+            </tr>
+            <tr>
+                <th>充值记录</th>
+                <th>12600</th>
+                <th>2100</th>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th>积分记录</th>
+                <th>无</th>
+                <th>2100</th>
+                <th>7</th>
+            </tr>
+        </table>
+
+        <table class="table table-hover table-responsive">
+            <caption style="font-weight: bold; font-size: 20px; color: black;">近一周充值记录</caption>
+            <tr>
+                <th align="left">Recharge ID</th>
+                <th align="left">交易号</th>
+                <th align="left">User</th>
+                <th align="left">总额 （分）</th>
+                <th align="left">Score</th>
+                <th align="left">支付状态</th>
+                <th align="left">支付类型</th>
+                <th align="left">created_at</th>
+                <th align="left">finished_at</th>
+            </tr>
+            <tr>
+                <th style="color: #0033FF">288</th>
+                <th>20180719134627-75916032</th>
+                <th>HLSKK</th>
+                <th>9000</th>
+                <th>1500</th>
+                <th>支付成功</th>
+                <th>微信支付</th>
+                <th>2018-07-19 13:46:27</th>
+                <th>2018-07-19 13:46:57</th>
+            </tr>
+            <tr>
+                <th style="color: #0033FF">288</th>
+                <th>20180719134627-75916032</th>
+                <th>王力宏</th>
+                <th>9000</th>
+                <th>1500</th>
+                <th>支付成功</th>
+                <th>微信支付</th>
+                <th>2018-07-19 13:46:27</th>
+                <th>2018-07-19 13:46:57</th>
+            </tr>
+            <tr>
+                <th style="color: #0033FF">288</th>
+                <th>20180719134627-75916032</th>
+                <th>张学友</th>
+                <th>9000</th>
+                <th>1500</th>
+                <th>支付成功</th>
+                <th>微信支付</th>
+                <th>2018-07-19 13:46:27</th>
+                <th>2018-07-19 13:46:57</th>
+            </tr>
+            <tr>
+                <th style="color: #0033FF">288</th>
+                <th>20180719134627-75916032</th>
+                <th>林俊杰</th>
+                <th>9000</th>
+                <th>1500</th>
+                <th>支付成功</th>
+                <th>微信支付</th>
+                <th>2018-07-19 13:46:27</th>
+                <th>2018-07-19 13:46:57</th>
+            </tr>
+            <tr>
+                <th style="color: #0033FF">288</th>
+                <th>20180719134627-75916032</th>
+                <th>王宝强</th>
+                <th>9000</th>
+                <th>1500</th>
+                <th>支付成功</th>
+                <th>微信支付</th>
+                <th>2018-07-19 13:46:27</th>
+                <th>2018-07-19 13:46:57</th>
+            </tr>
+            <tr>
+                <th style="color: #0033FF">288</th>
+                <th>20180719134627-75916032</th>
+                <th>周杰伦</th>
+                <th>9000</th>
+                <th>1500</th>
+                <th>支付成功</th>
+                <th>微信支付</th>
+                <th>2018-07-19 13:46:27</th>
+                <th>2018-07-19 13:46:57</th>
+            </tr>
+            <tr>
+                <th style="color: #0033FF;">288</th>
+                <th>20180719134617-75916032</th>
+                <th>张骞</th>
+                <th>9000</th>
+                <th>1500</th>
+                <th>支付成功</th>
+                <th>微信支付</th>
+                <th>2018-07-29 13:46:27</th>
+                <th>2018-07-29 13:46:57</th>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
+
+<script>
+    laydate.render({
+        elem: '#form_datetime'
+    });
+</script>
+</body>
+</html>
